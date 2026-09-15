@@ -1,0 +1,16 @@
+# Dev fallback (CPU) dependencies — see docs/qualcomm_ai_hub_setup.md
+# for swapping to Qualcomm AI Hub NPU-optimized models on target hardware
+
+faster-whisper>=1.0.0
+numpy>=1.24
+scipy>=1.10
+soundfile>=0.12
+scikit-learn>=1.3
+regex>=2023.0
+librosa>=0.10          # MFCC-based speaker embeddings for diarization
+pytest>=7.4            # for running tests
+
+# Uncomment when integrating Qualcomm AI Hub tooling on a Snapdragon device:
+# qai-hub
+# qai_hub_models
+# onnxruntime-qnn
